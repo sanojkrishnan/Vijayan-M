@@ -117,6 +117,12 @@
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
+.slide{
+    padding: 10px 5px 10px 5px;
+}
+.slide .absolute{
+    border-radius: 8px;
+}
 .strength ::after {
   content: "";
   position: absolute;
@@ -134,6 +140,12 @@
 }
 .strength:hover {
   transform: scale(1.05);
+}
+.khd{
+    font-size: x-small;
+}
+.th{
+    font-size: 8px;
 }
 @keyframes shine {
   0% {
@@ -182,7 +194,7 @@
     font-size: 20px;
   }
   .details {
-    padding: 20px 1px 1px 1px;
+    padding: 20px 2px 20px 2px;
   }
   .decleration{
     padding: 20px 10px;
@@ -191,6 +203,6 @@
 }
 @media screen and (max-width: 335px) {
   .photo-overlay {
-    top: 500px;
+    top: 450px;
   }
 }
