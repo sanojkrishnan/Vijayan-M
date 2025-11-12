@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .vijayan {
   font-family: "Baloo Chettan 2", sans-serif;
   font-optical-sizing: auto;
@@ -39,7 +42,21 @@
   font-style: normal;
   font-variation-settings: "width" 100;
 }
-
+.pdf {
+  display: flex;
+  justify-content: center;
+}
+.pdf-download {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+.pdf-download:hover {
+  transform: scale(1.1);
+  transition: 0.3s 0.3s ease-in-out;
+}
 .fa-brands {
   font-size: 60px;
 }
@@ -116,12 +133,34 @@
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
 }
-.slide{
-    padding: 10px 5px 10px 5px;
+.years {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
 }
-.slide .absolute{
-    border-radius: 8px;
+.vikasanam {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+.slide {
+  padding: 10px 5px 10px 5px;
+}
+.slide .absolute {
+  border-radius: 8px;
 }
 .strength ::after {
   content: "";
@@ -141,11 +180,11 @@
 .strength:hover {
   transform: scale(1.05);
 }
-.khd{
-    font-size: x-small;
+.khd {
+  font-size: x-small;
 }
-.th{
-    font-size: 8px;
+.th {
+  font-size: 8px;
 }
 @keyframes shine {
   0% {
@@ -163,7 +202,6 @@
   .icon-ranthal {
     font-size: 40px;
   }
-  
 }
 @media screen and (max-width: 685px) {
   .fa-brands {
@@ -174,8 +212,7 @@
     height: 250px;
   }
   .details {
-    margin-top: 200px 
-    
+    margin-top: 200px;
   }
   .photo-overlay {
     top: 370px;
@@ -196,7 +233,7 @@
   .details {
     padding: 20px 2px 20px 2px;
   }
-  .decleration{
+  .decleration {
     padding: 20px 10px;
     font-size: small;
   }
@@ -211,7 +248,9 @@
     transform: translateY(-10px); /* Starting position */
   }
   to {
-    transform: translateY(20px); /* Ending position (moves 100px to the right) */
+    transform: translateY(
+      20px
+    ); /* Ending position (moves 100px to the right) */
   }
 }
 
