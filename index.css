@@ -1,0 +1,196 @@
+.vijayan {
+  font-family: "Baloo Chettan 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.vijayan-desc {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+  font-size: 30px;
+}
+.icon-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon-ranthal {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+  font-size: 100px;
+}
+
+.contact {
+  padding-top: 30px;
+}
+.contact-grid {
+  justify-items: center;
+}
+.decleration {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "width" 100;
+}
+
+.fa-brands {
+  font-size: 60px;
+}
+.fa-square-facebook:hover {
+  color: #1877f2;
+}
+.fa-square-instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #feda75 0%,
+    /* Light yellow */ #fa7e1e 30%,
+    /* Orange */ #d62976 60%,
+    /* Pink */ #962fbf 80%,
+    /* Purple */ #4f5bd5 100% /* Blue */
+  );
+  background-clip: text;
+  color: transparent;
+}
+.fa-square-whatsapp:hover {
+  background: linear-gradient(to right, #075e54, #25d366);
+  background-clip: text;
+  color: transparent;
+}
+.fa-brands {
+  transition: all 0.5s ease-in-out;
+}
+.header-container {
+  position: relative;
+}
+.background {
+  width: 100%;
+  height: 100%;
+}
+.photo-overlay {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: 1; /* Ensure it appears on top */
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.stamp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 450px;
+  max-height: 450px;
+}
+.vijayan-photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: white 12px solid;
+}
+.details {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  justify-self: center;
+  padding: 40px 20px 20px 20px;
+  border-radius: 16px;
+}
+.strength {
+  position: relative;
+  box-shadow: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurs content behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+.strength ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  width: 50%; /* Width of the shine */
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite linear;
+}
+.strength:hover {
+  transform: scale(1.05);
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(500%); /* Move across the card and off-screen */
+  }
+}
+@media screen and (max-width: 950px) {
+  .stamp {
+    width: 200px;
+    height: 200px;
+  }
+  .icon-ranthal {
+    font-size: 40px;
+  }
+  
+}
+@media screen and (max-width: 685px) {
+  .fa-brands {
+    font-size: 40px;
+  }
+  .vijayan-photo {
+    width: 250px;
+    height: 250px;
+  }
+  .details {
+    margin-top: 200px 
+    
+  }
+  .photo-overlay {
+    top: 370px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .stamp {
+    width: 100px;
+    height: 100px;
+    left: 30%;
+  }
+  .photo-overlay {
+    top: 400px;
+  }
+  .icon-ranthal {
+    font-size: 20px;
+  }
+  .details {
+    padding: 20px 1px 1px 1px;
+  }
+  .decleration{
+    padding: 20px 10px;
+    font-size: small;
+  }
+}
+@media screen and (max-width: 335px) {
+  .photo-overlay {
+    top: 500px;
+  }
+}
