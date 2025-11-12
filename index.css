@@ -206,3 +206,19 @@
     top: 450px;
   }
 }
+@keyframes slide {
+  from {
+    transform: translateY(-10px); /* Starting position */
+  }
+  to {
+    transform: translateY(20px); /* Ending position (moves 100px to the right) */
+  }
+}
+
+.photo-overlay img {
+  animation-name: slide;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Repeats indefinitely */
+  animation-direction: alternate; /* Reverses direction on each iteration */
+  animation-timing-function: ease-in-out; /* Smooth start and end */
+}
