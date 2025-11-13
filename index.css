@@ -85,6 +85,7 @@ html {
 }
 .header-container {
   position: relative;
+
 }
 .background {
   width: 100%;
@@ -99,13 +100,6 @@ html {
   height: auto;
   display: flex;
   justify-content: center;
-}
-.stamp {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 450px;
-  max-height: 450px;
 }
 .vijayan-photo {
   width: 500px;
@@ -195,15 +189,11 @@ html {
   }
 }
 @media screen and (max-width: 950px) {
-  .stamp {
-    width: 200px;
-    height: 200px;
-  }
   .icon-ranthal {
     font-size: 40px;
   }
 }
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 639px) {
   .fa-brands {
     font-size: 40px;
   }
@@ -215,17 +205,12 @@ html {
     margin-top: 200px;
   }
   .photo-overlay {
-    top: 370px;
+    top: 280px;
   }
 }
 @media screen and (max-width: 450px) {
-  .stamp {
-    width: 100px;
-    height: 100px;
-    left: 30%;
-  }
   .photo-overlay {
-    top: 400px;
+    top: 290px;
   }
   .icon-ranthal {
     font-size: 20px;
@@ -238,9 +223,15 @@ html {
     font-size: small;
   }
 }
-@media screen and (max-width: 335px) {
+@media screen and (max-width: 390px) {
   .photo-overlay {
-    top: 450px;
+    top: 280px;
+  }
+  .vijayan-desc{
+    font-size: 20px;
+  }
+  .vijayan{
+    font-size: 30px;
   }
 }
 @keyframes slide {
