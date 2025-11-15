@@ -1,18 +1,19 @@
 html {
   scroll-behavior: smooth;
 }
-.vijayan {
-  font-family: "Baloo Chettan 2", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-}
-.vijayan-desc {
+body {
   font-family: "Anek Malayalam", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
   font-variation-settings: "width" 100;
+}
+.vijayan {
+  font-family: "Baloo Chettan 2", sans-serif;
+  font-weight: 800;
+  text-align: center;
+}
+.vijayan-desc {
   font-size: 30px;
 }
 .icon-div {
@@ -21,11 +22,7 @@ html {
   flex-direction: column;
 }
 .icon-ranthal {
-  font-family: "Anek Malayalam", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "width" 100;
   font-size: 100px;
 }
 
@@ -34,13 +31,6 @@ html {
 }
 .contact-grid {
   justify-items: center;
-}
-.decleration {
-  font-family: "Anek Malayalam", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "width" 100;
 }
 .pdf {
   display: flex;
@@ -85,7 +75,6 @@ html {
 }
 .header-container {
   position: relative;
-
 }
 .background {
   width: 100%;
@@ -127,25 +116,11 @@ html {
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  font-family: "Anek Malayalam", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "width" 100;
-}
-.years {
-  font-family: "Anek Malayalam", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
   font-variation-settings: "width" 100;
 }
 .vikasanam {
-  font-family: "Anek Malayalam", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "width" 100;
   color: white;
   text-align: center;
   font-size: larger;
@@ -180,6 +155,10 @@ html {
 .th {
   font-size: 8px;
 }
+.load-btn {
+  backdrop-filter: blur(5px);
+  background: linear-gradient(to bottom , #742a2a00 , rgba(255, 255, 255, 0.219));
+}
 @keyframes shine {
   0% {
     transform: translateX(-100%);
@@ -210,7 +189,7 @@ html {
 }
 @media screen and (max-width: 450px) {
   .photo-overlay {
-    top: 290px;
+    top: 305px;
   }
   .icon-ranthal {
     font-size: 20px;
@@ -223,14 +202,14 @@ html {
     font-size: small;
   }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 350px) {
   .photo-overlay {
-    top: 280px;
+    top: 270px;
   }
-  .vijayan-desc{
+  .vijayan-desc {
     font-size: 20px;
   }
-  .vijayan{
+  .vijayan {
     font-size: 30px;
   }
 }
