@@ -8,10 +8,20 @@ body {
   font-weight: 400;
   font-variation-settings: "width" 100;
 }
+
+.LDF-computer{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.LDF-phone{
+  display: none;
+}
 .vijayan {
   font-family: "Baloo Chettan 2", sans-serif;
   font-weight: 800;
-  text-align: center;
 }
 .vijayan-desc {
   font-size: 30px;
@@ -171,6 +181,11 @@ body {
   .icon-ranthal {
     font-size: 40px;
   }
+  .LDF-computer{
+  width: 200px;
+  height: 200px;
+  }
+
 }
 @media screen and (max-width: 639px) {
   .fa-brands {
@@ -186,6 +201,10 @@ body {
   .photo-overlay {
     top: 280px;
   }
+  .LDF-computer{
+  width: 100px;
+  height: 100px;
+  }
 }
 @media screen and (max-width: 450px) {
   .photo-overlay {
@@ -200,6 +219,15 @@ body {
   .decleration {
     padding: 20px 10px;
     font-size: small;
+  }
+  .vijayan , .vijayan-desc{
+    text-align: center;
+  }
+  .LDF-computer{
+    display: none;
+  }
+  .LDF-phone{
+    display: block;
   }
 }
 @media screen and (max-width: 350px) {
