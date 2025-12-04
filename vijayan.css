@@ -1,0 +1,261 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Anek Malayalam", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-variation-settings: "width" 100;
+}
+
+.LDF-computer {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.LDF-phone {
+  display: none;
+}
+.vijayan {
+  font-family: "Baloo Chettan 2", sans-serif;
+  font-weight: 800;
+}
+.vijayan-desc {
+  font-size: 30px;
+}
+.icon-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon-ranthal {
+  font-weight: 800;
+  font-size: 100px;
+}
+
+.contact {
+  padding-top: 30px;
+}
+.contact-grid {
+  justify-items: center;
+}
+.pdf {
+  display: flex;
+  justify-content: center;
+}
+.pdf-download {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: white;
+  display: inline-block;
+  margin-top: 20px;
+}
+.pdf-download:hover {
+  transform: scale(1.1);
+  transition: 0.3s 0.3s ease-in-out;
+}
+.fa-brands {
+  font-size: 60px;
+}
+.fa-square-facebook:hover {
+  color: #1877f2;
+}
+.fa-square-instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #feda75 0%,
+    /* Light yellow */ #fa7e1e 30%,
+    /* Orange */ #d62976 60%,
+    /* Pink */ #962fbf 80%,
+    /* Purple */ #4f5bd5 100% /* Blue */
+  );
+  background-clip: text;
+  color: transparent;
+}
+.fa-square-whatsapp:hover {
+  background: linear-gradient(to right, #075e54, #25d366);
+  background-clip: text;
+  color: transparent;
+}
+.fa-brands {
+  transition: all 0.5s ease-in-out;
+}
+.header-container {
+  position: relative;
+}
+.background {
+  width: 100%;
+  height: 100%;
+}
+.photo-overlay {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  z-index: 1; /* Ensure it appears on top */
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.vijayan-photo {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: white 12px solid;
+}
+.details {
+  margin-top: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  justify-self: center;
+  padding: 40px 20px 20px 20px;
+  border-radius: 16px;
+}
+.strength {
+  position: relative;
+  box-shadow: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blurs content behind the card */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  font-weight: 400;
+  font-variation-settings: "width" 100;
+}
+.vikasanam {
+  font-weight: 800;
+  color: white;
+  text-align: center;
+  font-size: larger;
+}
+.slide {
+  padding: 10px 5px 10px 5px;
+}
+.slide .absolute {
+  border-radius: 8px;
+}
+.strength ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%; /* Start off-screen to the left */
+  width: 50%; /* Width of the shine */
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite linear;
+}
+.strength:hover {
+  transform: scale(1.05);
+}
+.khd {
+  font-size: x-small;
+}
+.th {
+  font-size: 8px;
+}
+.load-btn {
+  backdrop-filter: blur(5px);
+  background: linear-gradient(to bottom, #742a2a00, rgba(255, 255, 255, 0.219));
+}
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(500%); /* Move across the card and off-screen */
+  }
+}
+@media screen and (max-width: 950px) {
+  .icon-ranthal {
+    font-size: 40px;
+  }
+  .LDF-computer {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 639px) {
+  .fa-brands {
+    font-size: 40px;
+  }
+  .vijayan-photo {
+    width: 250px;
+    height: 250px;
+  }
+  .details {
+    margin-top: 200px;
+  }
+  .photo-overlay {
+    top: 280px;
+  }
+  .LDF-computer {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .photo-overlay {
+    top: 305px;
+  }
+  .icon-ranthal {
+    font-size: 20px;
+  }
+  .details {
+    padding: 20px 2px 20px 2px;
+  }
+  .decleration {
+    padding: 20px 10px;
+    font-size: small;
+  }
+  .vijayan,
+  .vijayan-desc {
+    text-align: center;
+  }
+  .LDF-computer {
+    display: none;
+  }
+  .LDF-phone {
+    display: block;
+  }
+}
+@media screen and (max-width: 350px) {
+  .photo-overlay {
+    top: 270px;
+  }
+  .vijayan-desc {
+    font-size: 20px;
+  }
+  .vijayan {
+    font-size: 30px;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateY(-10px); /* Starting position */
+  }
+  to {
+    transform: translateY(
+      20px
+    ); /* Ending position (moves 100px to the right) */
+  }
+}
+
+.photo-overlay img {
+  animation-name: slide;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-iteration-count: infinite; /* Repeats indefinitely */
+  animation-direction: alternate; /* Reverses direction on each iteration */
+  animation-timing-function: ease-in-out; /* Smooth start and end */
+}

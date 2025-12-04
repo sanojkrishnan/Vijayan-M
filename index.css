@@ -1,261 +1,281 @@
-html {
-  scroll-behavior: smooth;
-}
 body {
   font-family: "Anek Malayalam", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
   font-weight: 400;
-  font-variation-settings: "width" 100;
-}
-
-.LDF-computer{
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 10px;
-  right: 0;
-}
-.LDF-phone{
-  display: none;
-}
-.vijayan {
-  font-family: "Baloo Chettan 2", sans-serif;
-  font-weight: 800;
-}
-.vijayan-desc {
-  font-size: 30px;
-}
-.icon-div {
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  background: #742a2a;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
 }
-.icon-ranthal {
-  font-weight: 800;
-  font-size: 100px;
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
 }
 
-.contact {
-  padding-top: 30px;
+.tab {
+  padding: 8px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #d0d0d0;
+  font-size: 15px;
+  font-weight: 600;
 }
-.contact-grid {
-  justify-items: center;
+
+.tab.active {
+  background: gray;
+  color: white;
 }
-.pdf {
+
+.ballot-box {
+  background: #ffffff;
+  width: 650px;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 50px rgb(27, 27, 27);
+}
+
+.top-bar {
   display: flex;
-  justify-content: center;
-}
-.pdf-download {
-  padding: 10px;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 12px 20px;
   border-radius: 10px;
-  background-color: white;
-  display: inline-block;
-  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
-.pdf-download:hover {
-  transform: scale(1.1);
-  transition: 0.3s 0.3s ease-in-out;
-}
-.fa-brands {
-  font-size: 60px;
-}
-.fa-square-facebook:hover {
-  color: #1877f2;
-}
-.fa-square-instagram:hover {
-  background: linear-gradient(
-    45deg,
-    #feda75 0%,
-    /* Light yellow */ #fa7e1e 30%,
-    /* Orange */ #d62976 60%,
-    /* Pink */ #962fbf 80%,
-    /* Purple */ #4f5bd5 100% /* Blue */
-  );
-  background-clip: text;
-  color: transparent;
-}
-.fa-square-whatsapp:hover {
-  background: linear-gradient(to right, #075e54, #25d366);
-  background-clip: text;
-  color: transparent;
-}
-.fa-brands {
-  transition: all 0.5s ease-in-out;
-}
-.header-container {
-  position: relative;
-}
-.background {
-  width: 100%;
-  height: 100%;
-}
-.photo-overlay {
-  position: absolute;
-  top: 400px;
-  left: 0;
-  z-index: 1; /* Ensure it appears on top */
-  width: 100vw;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
-.vijayan-photo {
-  width: 500px;
-  height: 500px;
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: green;
   border-radius: 50%;
-  border: white 12px solid;
+  display: inline-block;
+}
+
+.dot-light {
+  background: #2bff00;
+  box-shadow: 0 0 8px #2bff00, 0 0 16px #2bff00, 0 0 24px #2bff00,
+    0 0 38px #2bff00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr td {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
 }
 .details {
-  margin-top: 350px;
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  justify-content: center;
-  max-width: 1000px;
-  justify-self: center;
-  padding: 40px 20px 20px 20px;
-  border-radius: 16px;
+  align-items: center;
+  justify-content: space-between;
 }
-.strength {
-  position: relative;
-  box-shadow: 10px;
-  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blurs content behind the card */
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  overflow: hidden;
-  transition: transform 0.3s ease-in-out;
-  font-weight: 400;
-  font-variation-settings: "width" 100;
-}
-.vikasanam {
-  font-weight: 800;
-  color: white;
-  text-align: center;
-  font-size: larger;
-}
-.slide {
-  padding: 10px 5px 10px 5px;
-}
-.slide .absolute {
-  border-radius: 8px;
-}
-.strength ::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%; /* Start off-screen to the left */
-  width: 50%; /* Width of the shine */
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  animation: shine 2s infinite linear;
-}
-.strength:hover {
-  transform: scale(1.05);
-}
-.khd {
-  font-size: x-small;
-}
-.th {
-  font-size: 8px;
-}
-.load-btn {
-  backdrop-filter: blur(5px);
-  background: linear-gradient(to bottom , #742a2a00 , rgba(255, 255, 255, 0.219));
-}
-@keyframes shine {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(500%); /* Move across the card and off-screen */
-  }
-}
-@media screen and (max-width: 950px) {
-  .icon-ranthal {
-    font-size: 40px;
-  }
-  .LDF-computer{
-  width: 200px;
-  height: 200px;
-  }
 
+.num {
+  width: 30px;
+  text-align: center;
+  font-weight: 600;
 }
-@media screen and (max-width: 639px) {
-  .fa-brands {
-    font-size: 40px;
-  }
-  .vijayan-photo {
-    width: 250px;
-    height: 250px;
-  }
-  .details {
-    margin-top: 200px;
-  }
-  .photo-overlay {
-    top: 280px;
-  }
-  .LDF-computer{
-  width: 100px;
-  height: 100px;
-  }
+
+.candidate {
+  font-size: 18px;
 }
-@media screen and (max-width: 450px) {
-  .photo-overlay {
-    top: 305px;
-  }
-  .icon-ranthal {
-    font-size: 20px;
-  }
-  .details {
-    padding: 20px 2px 20px 2px;
-  }
-  .decleration {
-    padding: 20px 10px;
-    font-size: small;
-  }
-  .vijayan , .vijayan-desc{
-    text-align: center;
-  }
-  .LDF-computer{
-    display: none;
-  }
-  .LDF-phone{
-    display: block;
-  }
+
+.light {
+  height: 18px;
+  width: 18px;
+  background: #7c1414;
+  border-radius: 50%;
+  margin: auto;
 }
-@media screen and (max-width: 350px) {
-  .photo-overlay {
-    top: 270px;
+
+.light-on {
+  background: #ff0000;
+  box-shadow: 0 0 8px #ff0000, 0 0 16px #ff0000, 0 0 24px #ff0000,
+    0 0 38px #ff0000;
+}
+
+.vote-btn {
+  height: 40px;
+  width: 70px;
+  background: #083b73;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.vote-btn:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 700px) {
+  .ballot-box {
+    width: 90%;
   }
-  .vijayan-desc {
-    font-size: 20px;
+  .top-bar span {
+    font-size: 8px;
+  }
+  .vote-btn {
+    height: 30px;
+    width: 60px;
+  }
+  .light {
+    height: 12px;
+    width: 12px;
   }
   .vijayan {
-    font-size: 30px;
+    font-size: 10px;
+    text-align: start;
   }
-}
-@keyframes slide {
-  from {
-    transform: translateY(-10px); /* Starting position */
+  .logo {
+    height: 20px;
+    width: 20px;
   }
-  to {
-    transform: translateY(
-      20px
-    ); /* Ending position (moves 100px to the right) */
+  .candidate {
+    padding: 5px;
+  }
+  body {
+    padding: 10px;
   }
 }
 
-.photo-overlay img {
-  animation-name: slide;
-  animation-duration: 2s; /* Duration of the animation */
-  animation-iteration-count: infinite; /* Repeats indefinitely */
-  animation-direction: alternate; /* Reverses direction on each iteration */
-  animation-timing-function: ease-in-out; /* Smooth start and end */
+/*------------------------------------------------*/
+
+.show-vikasanam {
+  display: none;
+}
+
+.vikasanam {
+  position: fixed;
+  top: 300px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+  opacity: 0;
+  display: block;
+  animation: fadeInText 1s 1.5s forwards;
+}
+.vikasanam h2 {
+  font-size: medium;
+  color: #fc0202;
+}
+
+.vikasanam p {
+  font-size: smaller;
+}
+.vikasanam a {
+  background-color: red;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+}
+
+.confirm {
+  display: flex;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.37);
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Container for centering */
+.confirmation {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #4caf50; /* green background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: scale(0);
+  animation: pop 0.5s forwards, goUp 1s 1s forwards; /* pop effect */
+}
+
+/* Tick mark */
+.checkmark {
+  width: 12px;
+  height: 6px;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  transform: rotate(-45deg) scale(0);
+  animation: tick 0.5s 0.5s forwards; /* delay to appear after pop */
+}
+
+/* Pop animation */
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Tick animation */
+@keyframes tick {
+  0% {
+    transform: rotate(-45deg) scale(0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(8px);
+  }
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    z-index: 2;
+    opacity: 0;
+  }
+  100% {
+    z-index: 2;
+    opacity: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .vikasanam {
+    top: 350px;
+  }
 }
