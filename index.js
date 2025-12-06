@@ -31,3 +31,4 @@ const voteButton = () => {
       .classList.add("vikasanam");
   }, 1000);
 };
+

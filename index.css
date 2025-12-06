@@ -172,6 +172,9 @@ tr td {
   font-size: medium;
   color: #fc0202;
 }
+.vikasanam h2 span {
+  font-size: large;
+}
 
 .vikasanam p {
   font-size: smaller;
